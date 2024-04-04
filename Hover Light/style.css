@@ -1,0 +1,113 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.5rem;
+    background-color: #000000;
+    }
+.title {
+    color: #fff;
+    font-size: 2.1rem;
+    text-align: center;
+}
+.container {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: start;
+}
+.heading {
+    color: #fff;
+    font-size: 1.7rem;
+    flex-basis: 60%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-auto-rows: 50px;
+    gap: 20px;
+    margin-top: 50px;
+    text-align: center;
+}
+.box {
+    text-indent: -9999px;
+    margin-top: 20px;
+    background-size: cover;
+    background-position: left;
+    
+    transition: all 1s ease-in-out;
+    cursor: pointer;
+}
+.row1:hover {
+    background-color: #ffffff80;
+    background-blend-mode: hard-light;
+}
+.row2:hover {
+    background-color: #1f1e1e;
+    background-blend-mode: color-dodge;
+}
+.row1 {
+    height: 500px;
+    background-blend-mode: normal;
+    background-color: #141414;
+}
+.row2 {
+    height: 500px;
+    background-color: #ffffff80;
+}
+footer {
+    margin-top: 20px;
+    margin-bottom: 5px;
+    color: #fff;
+    font-size: 18px;
+    text-align: center;
+
+}
+@media screen and (max-width: 960px) {
+    .title {
+        font-size: 1.9rem;
+    }
+    .heading {
+        font-size: 1.5rem;
+        margin-top: 70px;
+    }
+    .box {
+        background-position: left;
+    }
+    .row1 {
+        width: 250px;
+        height: 300px;
+    }
+    .row2 {
+        width: 250px;
+        height: 300px;
+    }
+    footer { 
+        margin-top: 0;
+        font-size: 16px;
+    }
+}
+ 
+@media screen and (max-width: 580px) {
+    .title {
+        font-size: 1.5rem;
+    }
+    .heading {
+        font-size: 1rem;
+        display: inline-block;           
+    }
+    .off {
+        position: relative;
+        top: 420px;
+    }
+    .row2 {
+        margin-top: 150px;
+    }
+    footer {
+        margin-top: 60px;
+        font-size: 15px;
+    }
+}
