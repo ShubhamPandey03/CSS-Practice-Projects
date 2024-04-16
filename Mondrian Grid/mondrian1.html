@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mondrian Grid 1</title>
+</head>
+<style>
+    body {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        margin: 0;
+        padding: 0;
+    }
+    .grid-container {
+        height: 748px;
+        width: 748px;
+        background-color: #000;
+        display: grid;
+        grid-template-columns: repeat(15,1fr);
+        grid-template-rows: repeat(15, 1fr);
+        gap: 9px;
+    }
+    .item {
+        background-color: #F0F1EC;
+    }
+    .white {
+        grid-area: 1 / 1 / 6 / 4;
+    }
+    .white1 {
+        grid-area: 6 / 1 / 12 / 4;
+    }
+    .red {
+        background-color: #E72F24;
+        grid-area: 1 / 4 / 12 / 16;
+    }
+    .blue {
+        background-color: #004592;
+        grid-area: 12 / 1 / 16 / 4;
+    }
+    .white2 {
+        grid-area: 12 / 4 / 16 / 13;
+    }
+    .white3 {
+        grid-area: 12 / 13 / 14 / 16;
+    }
+    .yellow {
+        background-color: #F9D01E;
+        grid-area: 14 / 13 / 16 / 16 ;
+    }
+</style>
+<body>
+    <div class="grid-container">
+        <div class="item white"></div>
+        <div class="item red"></div>
+        <div class="item white1"></div>
+        <div class="item blue"></div>
+        <div class="item white2"></div>
+        <div class="item white3"></div>
+        <div class="item yellow"></div>
+    </div>
+</body>
+</html>
