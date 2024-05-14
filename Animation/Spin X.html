@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        
+        body {
+            background-color: #000;
+        }
+
+        .content {
+            width: 900px;
+            height: 750px;
+            background-color: #000;
+            display: grid;
+            grid-template-columns: repeat(20, 1fr);
+            grid-template-rows: repeat(20, 1fr);
+            margin-left: 290px;
+            -webkit-animation: spin 2s linear infinite;
+            -moz-animation: spin 2s linear infinite;
+            animation: spin 2s linear infinite;
+        }
+
+        .item {
+            background-color: #fff;
+            -webkit-animation: glow 1s linear infinite;
+            animation: glow 1s linear infinite;
+        }
+
+        .item:nth-child(1) {
+            grid-area: 6 / 6 / 7 / 7;
+        }
+        .item:nth-child(2) {
+            grid-area: 7 / 7 / 8 / 8;
+        }
+        .item:nth-child(3) {
+            grid-area: 8 / 8 / 9 / 9;
+        }
+        .item:nth-child(4) {
+            grid-area: 9 / 9 / 10 / 10;
+        }
+        .item:nth-child(5) {
+            grid-area: 10 / 10 / 11 / 11;
+        }
+        .item:nth-child(6) {
+            grid-area: 10 / 11 / 11 / 12;
+        }
+        .item:nth-child(7) {
+            grid-area: 9 / 12 / 10 / 13;
+        }
+        .item:nth-child(8) {
+            grid-area: 8 / 13 / 9 / 14;
+        }
+        .item:nth-child(9) {
+            grid-area: 7 / 14 / 8 / 15;
+        }
+        .item:nth-child(10) {
+            grid-area: 6 / 15 / 7 / 16;
+        }
+        .item:nth-child(11) {
+            grid-area: 11 / 11 / 12 / 12;
+        }
+        .item:nth-child(12) {
+            grid-area: 12 / 12 / 13 / 13;
+        }
+        .item:nth-child(13) {
+            grid-area: 13 / 13 / 14 / 14;
+        }
+        .item:nth-child(14) {
+            grid-area: 14 / 14 / 15 / 15;
+        }
+        .item:nth-child(15) {
+            grid-area: 15 / 15 / 16 / 16;
+        }
+        .item:nth-child(16) {
+            grid-area: 11 / 10 / 12 / 11;
+        }
+        .item:nth-child(17) {
+            grid-area: 12 / 9 / 13 / 10;
+        }
+        .item:nth-child(18) {
+            grid-area: 13 / 8 / 14 / 9;
+        }
+        .item:nth-child(19) {
+            grid-area: 14 / 7 / 15 / 8;
+        }
+        .item:nth-child(20) {
+            grid-area: 15 / 6 / 16 / 7;
+        }
+
+        @-moz-keyframes spin {
+            100% {
+                -moz-transform: rotate(360deg);
+            }
+
+        }
+        @-webkit-keyframes spin {
+            100% {
+                -webkit-transform: rotate(360deg);
+            }
+        }
+        @keyframes spin {
+            100% {
+                -webkit-transform: rotate(360deg);
+                transform: rotate(360deg);
+            }
+        }
+        @-webkit-keyframes glow {
+            20% {background-color: aqua;}
+            40% {background-color: red;}
+            60% {background-color: yellow;}
+            80% {background-color: blue;}
+        }
+        @keyframes glow {
+            20% {background-color: aqua;}
+            40% {background-color: red;}
+            60% {background-color: yellow;}
+            80% {background-color: blue;}
+        }
+    </style>
+</head>
+<body>
+    <div class="content">
+        <div class="item box1"></div>
+        <div class="item box2"></div>
+        <div class="item box3"></div>
+        <div class="item box4"></div>
+        <div class="item box5"></div>
+        <div class="item box6"></div>
+        <div class="item box7"></div>
+        <div class="item box8"></div>
+        <div class="item box9"></div>
+        <div class="item box10"></div>
+        <div class="item box11"></div>
+        <div class="item box12"></div>
+        <div class="item box13"></div>
+        <div class="item box14"></div>
+        <div class="item box15"></div>
+        <div class="item box16"></div>
+        <div class="item box17"></div>
+        <div class="item box18"></div>
+        <div class="item box19"></div>
+        <div class="item box20"></div>
+    </div>
+</body>
+</html>
