@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        .element:before {
+        display: block;
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        font-family: 'icons';
+        font-size: 21px;
+        text-indent: 0;
+        font-variant: normal;
+        line-height: 21px;
+        }
+
+        .element {
+        position: relative;
+        width: 500px;
+        overflow: inherit;
+        margin: 50px auto;
+        list-style: none;
+        -webkit-animation: animateHeart 2s infinite linear;
+        animation: animateHeart 2s infinite linear;
+        }       
+
+        .element:before,
+        .element:after {
+        position: absolute;
+        content: '';
+        top: 0;
+        left: 50%;
+        width: 120px;
+        height: 200px;
+        background: red;
+        border-radius: 100px 100px 0 0;
+        -webkit-transform: rotate(-45deg) translateZ(0);
+        transform: rotate(-45deg) translateZ(0);
+        -webkit-transform-origin: 0 100%;
+        transform-origin: 0 100%;
+        }
+
+        .element:after {
+        left: 26%;
+        -webkit-transform: rotate(45deg) translateZ(0);
+        transform: rotate(45deg) translateZ(0);
+        -webkit-transform-origin: 100% 100%;
+        transform-origin: 100% 100%;
+        }
+
+        @-webkit-keyframes animateHeart {
+        0% {
+            -webkit-transform: scale(0.8);
+        }
+        5% {
+            -webkit-transform: scale(0.9);
+        }
+        10% {
+            -webkit-transform: scale(0.8);
+        }
+        15% {
+            -webkit-transform: scale(1);
+        }
+        50% {
+            -webkit-transform: scale(0.8);
+        }
+        100% {
+            -webkit-transform: scale(0.8);
+        }
+        }
+
+        @keyframes animateHeart {
+        0% {
+            transform: scale(0.8);
+        }
+        5% {
+            transform: scale(0.9);
+        }
+        10% {
+            transform: scale(0.8);
+        }
+        15% {
+            transform: scale(1);
+        }
+        50% {
+            transform: scale(0.8);
+        }
+        100% {
+            transform: scale(0.8);
+        }
+        }
+    </style>
+</head>
+<body>
+    <div class="content">
+        <div class="element"></div>
+    </div>
+</body>
+</html>
+
